@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    position: relative;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height:100vh;
+    background:url(../images/pexels-karolina-grabowska-4230623.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::after{
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.511);
+}
+.main-container {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius:20px;
+    width:800px;
+    max-width:100%;
+    height:480px;
+    display:flex;
+    z-index:2;
+    margin:auto;
+}
+
+@media (max-width:850px) {
+    .main-container {
+        width:400px;
+        max-width:96%;
+    }
+}
+
+.main-container .form-container {
+    flex-basis:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    transition:1s;
+}
+
+@media (max-width:850px) {
+    .main-container .form-container  {
+        flex:1;
+    }
+}
+
+.main-container .form-container form {
+    text-align:center;
+    width:100%;
+}
+.main-container .form-container form  h1{
+    text-align:center;
+    font-size: 30px;
+    margin-bottom:10px;
+
+}
+@media (min-width:350px) and (max-width:850px){
+    .main-container .form-container form  h1{
+        font-size:26px;
+    }
+}
+@media (max-width:450px){
+    .main-container .form-container form  h1{
+        font-size:22px;
+    }
+}
+
+.main-container .form-container form  .social-icons {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:20px 0;
+ }
+ .main-container .form-container form .social-icons a {
+    width:40px;
+    height:40px;
+    text-align:center;
+    border:1px solid #ccc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    margin-right:5px;
+    border-radius:20%;
+}
+.main-container .form-container form  p {
+    font-size:16px;
+    margin:10px 0;
+}
+
+.main-container .form-container form  .input-holder {
+    width:100%;
+}
+.main-container .form-container form  .input-holder input {
+    margin:7px 0;
+    width:80%;
+    padding:10px 15px;
+    border-radius:4px;
+    outline:none;
+    border:none;
+    background-color: #eee;
+}
+.main-container .form-container form  .data {
+   margin: 30px 0;
+}
+.main-container .form-container form .forgetPass {
+    display: inline-block;
+    margin-top:20px;
+    text-decoration:none;
+}
+.main-container button {
+    display:block;
+    margin:20px auto;
+    padding:12px 40px;
+    background-color: #512da8;
+    color: #fff;
+    border-radius:6px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size:16px;
+    transition:0.3s;
+}
+.main-container button:hover {
+    background-color: #491facc4;
+}
+.main-container .toggle-pannel {
+    background-color: #512da8;
+    flex-basis:50%;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.main-container .toggle-pannel.right {
+  border-radius: 100px 0 0 100px;
+}
+.main-container .toggle-pannel.left {
+  border-radius: 0 100px 100px 0;
+}
+@media (max-width:850px) {
+    .main-container .toggle-pannel {
+        display:none;
+    }
+}
+
+.main-container .toggle-pannel .toggle  {
+    width:100%;
+}
+.main-container .toggle-pannel .toggle h1 {
+    margin-bottom:10px;
+}
+.main-container .toggle-pannel .toggle p { 
+    font-size:14px;
+    max-width:80%;
+    margin: 20px auto 0;
+    line-height:1.4;
+}
+.main-container .toggle-pannel .toggle a { 
+  background-color:transparent;
+  border:1px solid white;
+  display:block;
+  width:100px;
+  height:40px;
+  margin:20px auto;
+  color: #fff;
+  border-radius:6px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
